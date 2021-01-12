@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(255, 3, 3);
+}
+
+nav.arriba {
+    background-color: #FCD87F;
+    padding: 15px;
+    padding-left: 50px;
+}
+
+nav.medio {
+    background-color: #12457A;
+    padding-left: 50px;
+}
+
+img {
+    padding-left: 70px;
+}
+
+a.arriba {
+    font-size: xx-small;
+    color: black;
+}

@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: #F2F2F2;
+    color: BLACK;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+nav.arriba {
+    background-color: #FCD87F;
+    padding: 10px;
+    padding-left: 50px;
+    text-size-adjust: initial;
+}
+
+nav.medio {
+    background-color: #12457A;
+    padding-left: 50px;
+}
+
+img {
+    padding-left: 70px;
+}
+
+a.arriba {
+    font-size: small;
+    color: black;
+}
+
+a.medio {
+    color: white;
+    text-align: center;
+}
+
+.padre {
+    padding-block-start: 250px;
+    background: white;
+    height: 50px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista {
+    background: white;
+    height: 50px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+img.usuario {
+    padding-left: 70px;
+    align-content: flex-end;
+}
+
+a.ingreso {
+    color: blue;
+    float: right;
+    align-content: center;
+}
+
+.usuarios {
+    padding-block-start: 225px;
+    background: white;
+    height: 50px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 10px;
+}
+
+.grid-item1 {
+    border-style: ridge;
+    background: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 15;
+}
+
+a.menuadmin {
+    font-size: large;
+}
+
+.grid-item2 {
+    background: greenyellow;
+    text-align: right;
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
