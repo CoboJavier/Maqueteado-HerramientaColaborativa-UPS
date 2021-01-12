@@ -74,6 +74,18 @@ app.get('/dashboard', (req, res) => {
 
 });
 
+app.get('/subject', (req, res) => {
+
+    res.render('subject');
+
+});
+
+app.get('/subjectlider', (req, res) => {
+
+    res.render('subjectlider');
+
+});
+
 
 
 

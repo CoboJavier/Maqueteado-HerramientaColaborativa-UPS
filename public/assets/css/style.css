@@ -69,7 +69,6 @@ a.ingreso {
 }
 
 .usuarios {
-    padding-block-start: 225px;
     background: white;
     height: 50px;
     /*IMPORTANTE*/
@@ -80,8 +79,8 @@ a.ingreso {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     grid-gap: 10px;
 }
 
@@ -95,15 +94,83 @@ a.ingreso {
     grid-row-end: 15;
 }
 
+.grid-item2 {
+    /*border-style: solid;*/
+    background: white;
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.grid-item22 {
+    /*border-style: solid;*/
+    background: white;
+    text-align: center;
+    grid-column-start: 14;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.grid-item3 {
+    border-style: ridge;
+    background: white;
+    text-align: center;
+    grid-column-start: 16;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.grid-item4 {
+    border-style: ridge;
+    background: white;
+    text-align: center;
+    grid-column-start: 16;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
 a.menuadmin {
     font-size: large;
 }
 
-.grid-item2 {
-    background: greenyellow;
-    text-align: right;
-    grid-column-start: 5;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.table-wrapper {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.table-wrapper2 {
+    overflow-y: scroll;
+    height: 100px;
+}
+
+.table-wrapper th {
+    position: sticky;
+    top: 0;
+}
+
+
+/* A bit more styling to make it look better */
+
+.table-wrapper {
+    background: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background: #DDD;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
 }
