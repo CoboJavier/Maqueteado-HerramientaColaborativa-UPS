@@ -2,27 +2,91 @@
 
 {{> navbar }}
 
-<div class="grid-container">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-  <!--Menu lateral --->
-  <div class="grid-item1">
-    <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a class="menuadmin" href="/carrers">Gestionar carrera</a></li>
-    <li class="list-group-item"><a class="menuadmin" href="/period">Gestionar periodo</a></li>
-    <li class="list-group-item"><a class="menuadmin" href="/users">Gestionar usuario</a></li>
-    <li class="list-group-item"><a class="menuadmin" href="/subjectlider">Coordinadores de asignatura </a></li>
-    <li class="list-group-item"><a class="menuadmin" href="subject">Asignatura </a></li>
-    <li class="list-group-item"><a class="menuadmin" href="#">Reportes </a></li>
-    </ul>
-  </div> 
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-  <!--Formulario--->
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+  
 
-  <div class="grid-item2">
+<div class="container-fluid">
+  <div class="row">
+    
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       
-      <br/>
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/carrers">
+              <span data-feather="home"></span>
+              Gestionar carrera
+            </a>
+          </li>
 
-      <div class="form-group">
+          <li class="nav-item">
+            <a class="nav-link" href="/period">
+              <span data-feather="file"></span>
+              Gestionar periodos
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              <span data-feather="shopping-cart"></span>
+               Gestionar usuarios
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/subjectlider">
+              <span data-feather="users"></span>
+              Coordinadores de asignatura
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="subject">
+              <span data-feather="bar-chart-2"></span>
+              Asignatura
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">
+              <span data-feather="layers"></span>
+              Reportes
+            </a>
+          </li>
+
+        </ul>
+
+        
+ 
+        
+      </div>
+      
+    </nav>
+ 
+    <!--Contenido AQUI-->
+    <div class="col-sm-4">
+    <!--Contenido AQUI-->
+    <div class="form-group">
       <label for="exampleDropdownFormPassword2">Coodinador</label>
         <select class="form-control" name="cars" id="cars">
         <option value="volvo">Juan Perez</option>
@@ -36,10 +100,8 @@
       </center>
 
 <br>
-<!--Tabla--->
-    <div>
-  
-    <div class="table-wrapper2">
+
+<div class="table-wrapper2">
     <table>
         <thead>
             <tr>
@@ -55,72 +117,25 @@
                 <td>54</td>
                 <td>Text</td>
                 <td>Text</td>
-                <td>Text</td>
+                <td></td>
                
             </tr>
-            <tr>
-                <td>55</td>
-                <td>Text</td>
-                <td>Text</td>
-                <td>Text</td>
-               
-            </tr>
-            <tr>
-                <td>56</td>
-                <td>Text</td>
-                <td>Text</td>
-                <td>Text</td>
-   
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-      
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-        
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-         
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-
-            </tr>
+            
         </tbody>
     </table>
     </div>
 
-
-
-
-  </div>
-
-  </div> 
-
-
-<!--Segundo contenedor --->
-<div class="grid-item22">
-<!--Formulario--->
-
-  <div class="grid-item2">
       
-      <br/>
+    <!--Contenido AQUI-->
+    </div>
 
-      <div class="form-group">
+
+
+    <!--Contenido AQUI-->
+    <div class="col-sm-4">
+    <!--Contenido AQUI-->
+    
+    <div class="form-group">
       <label for="exampleDropdownFormPassword2">Docente</label>
         <select class="form-control" name="cars" id="cars">
         <option value="volvo">Juan Perez</option>
@@ -134,10 +149,8 @@
       </center>
 
 <br>
-<!--Tabla--->
-    <div>
-  
-    <div class="table-wrapper2">
+
+<div class="table-wrapper2">
     <table>
         <thead>
             <tr>
@@ -201,10 +214,16 @@
         </tbody>
     </table>
     </div>
-</div>
-<!--*************** --->
 
-</div><!--FIN GRID CONTAINER --->
+      
+    <!--Contenido AQUI-->
+    </div>
+
+
+</div>
+
+
+
 
 
 {{> footer }}
